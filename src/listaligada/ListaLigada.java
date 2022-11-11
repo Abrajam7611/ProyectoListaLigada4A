@@ -9,10 +9,10 @@ package listaligada;
  * @author Abraham
  */
 public class ListaLigada {
-    private Nodo head;//Apuntador a la cabecera de la lista (primer nodo)
-    private Nodo tail;//Apuntador a la cola de la lista (ultimo nodo)
-    private Nodo actual;//Apuntador al nodo seleccionado actualmente
-    private int size;//tamaño de la lista (número de nodos en la lista)
+    private Nodo head; //Este es un apuntador a la cabezera de la lista (primer nodo)
+    private Nodo tail; //Apuntador a la cola de la lista (ultimo nodo)
+    private Nodo actual; //Apuntador al nodo seleccionado actualmente
+    private int size; //tamaño de la lista (número de nodos en la lista)
     
     public ListaLigada(){
         this.head= null;
