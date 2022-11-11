@@ -27,7 +27,7 @@ public class ListaLigada {
         this.head = nodo;
         this.tail = nodo;
         this.actual=nodo;
-        this.size++; // Se incrementa el tamaño de la lista
+        this.size++; //Se incrementa el tamaño de la lista
     }
     */
     public void add(int dato){
@@ -35,13 +35,13 @@ public class ListaLigada {
         this.size++;
         this.tail= nuevoNodo; //se mueve el apuntador al ultimo nodo
         
-        if( head  == null){//La lista esta vacia, creamos el primer nodo
+        if( head  == null){ //La lista esta vacia, creamos el primer nodo
             head = nuevoNodo;
             actual = head;
         }
         else{
-            actual.setSiguiente(nuevoNodo);// actual.sig apunta al nuevoNodo (enlace entre nodos)
-            actual = nuevoNodo;// ahora actual es el nuevoNodo
+            actual.setSiguiente(nuevoNodo); // actual.sig apunta al nuevoNodo (enlace entre nodos)
+            actual = nuevoNodo; // ahora actual es el nuevoNodo
         }
         
         
@@ -74,6 +74,17 @@ public class ListaLigada {
         }
     }
     
-    
+    //Metodo para eliminar un nodo que esta al final de la lista
+    //Mi primera edicion al codigo
+    public int DeleteInicio(){
+        int elemento = head.getDato(); //Declaro un entero 
+        if(head == tail){ //Este if es solo en caso de que haya un solo nodo
+            this.head=null;
+            this.tail=null;
+        }else{
+            head=head.getSiguiente(); //Aqui es cuando ya son dos o mas nodos
+        }
+        return elemento;
+    }
     
 }

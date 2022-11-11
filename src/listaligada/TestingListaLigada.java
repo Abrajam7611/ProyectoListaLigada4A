@@ -34,14 +34,12 @@ public class TestingListaLigada {
             if(respuesta == 'n' || respuesta == 'N')
                 break;
         }
+                
+        System.out.println("-----------------------------------");
+        System.out.println("Contenido de la lista ligada: ");
+        lista.printList();
             
-           
-            
-            System.out.println("-----------------------------------");
-            System.out.println("Contenido de la lista ligada: ");
-            lista.printList();
-            
-        //Desde aqui empieza mi primer version de mi entregable para el viernes 09/11/2022
+        //Mi primera edicion al codigo
         System.out.println("---------------------------------------------");
         System.out.println("Eliminando un elemento del inicio de la lista");
         dato = lista.DeleteInicio();
