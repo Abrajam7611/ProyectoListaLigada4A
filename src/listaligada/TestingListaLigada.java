@@ -40,6 +40,15 @@ public class TestingListaLigada {
         lista.printList();
             
         //Mi primera edicion al codigo
+        System.out.println("--------------------------");
+        System.out.println("Escribe el elemento a insertar: ");
+        entrada = bufer.readLine();
+        dato = Integer.parseInt(entrada);
+        System.out.println("Escribe la posicion en donde la quieres insertar: ");
+        entrada = bufer.readLine();
+        int p = Integer.parseInt(entrada);
+        lista.add(dato, p);
+        
         System.out.println("---------------------------------------------");
         System.out.println("Eliminando un elemento del inicio de la lista");
         dato = lista.DeleteInicio();
